@@ -21,9 +21,9 @@ add_executable(${PROJECT_NAME}
 )
 
 #set directories of target
-target_include_directories(${PROJECT_NAME} PUBLIC
-            ${CMAKE_SOURCE_DIR}/${PRJ_HDR_DIR}/depend
-            ${CMAKE_SOURCE_DIR/${PRJ_HDR_DIR}
+target_include_directories (${PROJECT_NAME} PUBLIC
+            "${CMAKE_SOURCE_DIR}/${PRJ_HDR_DIR}/depend"
+            "${CMAKE_SOURCE_DIR}/${PRJ_HDR_DIR}"
 )
 
 
