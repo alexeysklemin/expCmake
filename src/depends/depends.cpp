@@ -1,5 +1,5 @@
-#include "depends.h"
+#include "depend.h"
 
-printDepend(){
+void printDepend(){
     std::cout<<"Depend header\n";
 }

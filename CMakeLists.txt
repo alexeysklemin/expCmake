@@ -19,14 +19,15 @@ message(STATUS "Find headers " ${PRJ_HDR_DIR})
 message(STATUS "Find headers " ${HEADERS})
 message(STATUS "Find sources " ${PRJ_SRC_DIR})
 message(STATUS "Find sources " ${SOURCES})
+message(STATUS "Absolute path to header: ${PRJ_HDR_DIR}/depend")
 
 #make executable
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 
 #set directories of target
 target_include_directories (${PROJECT_NAME} PUBLIC
-            "${CMAKE_CURRENT_SOURCE_DIR}/${PRJ_HDR_DIR}/depend"
-   #         "${CMAKE_CURRENT_SOURCE_DIR}/${PRJ_HDR_DIR}"
+            "${PRJ_HDR_DIR}/depends"
+            "${PRJ_HDR_DIR}"
 )
 
 #add own sublibraries or projects
@@ -37,8 +38,5 @@ find_package(libzip REQUIRED)
 target_link_libraries(${PROJECT_NAME} PUBLIC ${LIBZIP_LIBRARIES})
 target_include_directories(${PROJECT_NAME} PUBLIC ${LIBZIP_INCLUDE_DIRS})
 
-compilation terminated.
-make[2]: *** [CMakeFiles/expCmake.dir/build.make:76: CMakeFiles/expCmake.dir/src/depends/depends.cpp.o] Ошибка 1
-make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/expCmake.dir/all] Ошибка 2
-make: *** [Makefile:91: all] Ошибка 2
+
 

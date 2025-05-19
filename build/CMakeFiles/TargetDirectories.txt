@@ -1,0 +1,3 @@
+/home/alex/expCmake/build/CMakeFiles/expCmake.dir
+/home/alex/expCmake/build/CMakeFiles/edit_cache.dir
+/home/alex/expCmake/build/CMakeFiles/rebuild_cache.dir
