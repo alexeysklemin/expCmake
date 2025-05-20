@@ -15,10 +15,10 @@ file(GLOB_RECURSE HEADERS "${PRJ_HDR_DIR}/*.h")
 file(GLOB_RECURSE SOURCES "${PRJ_SRC_DIR}/*.cpp")
 file(GLOB_RECURSE SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/main.cpp")
 #stup text
-message(STATUS "Find headers " ${PRJ_HDR_DIR})
-message(STATUS "Find headers " ${HEADERS})
-message(STATUS "Find sources " ${PRJ_SRC_DIR})
-message(STATUS "Find sources " ${SOURCES})
+message(STATUS "Find headers PRJ" ${PRJ_HDR_DIR})
+message(STATUS "Find headers HEADERS" ${HEADERS})
+message(STATUS "Find sources SRC" ${PRJ_SRC_DIR})
+message(STATUS "Find sources SOURCES" ${SOURCES})
 message(STATUS "Absolute path to header: ${PRJ_HDR_DIR}/depend")
 
 #make executable
